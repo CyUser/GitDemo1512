@@ -27,7 +27,17 @@ import android.os.Bundle;
  * VCS -> Enabl Version Control Integration -> Git
  * 2、将具体的代码文件/开发资源也要加入仓库中
  * VCS -> Git -> add
+ * 3、添加到仓库中的代码需要提交（保存）才能最终使用
+ * VCS -> Git -> commit
+ * 1部分：预览即将被保存的文件
+ * 2部分：Commit Message。该部分不允许为空，每一次提交代码时都需要记录当前代码版本的更新发生了什么变化
+ * 如果是第一次将工程提交，填写init commit即可
  *
+ * 文件颜色：
+ * 红色：未添加到仓库的状态，add变为绿色
+ * 绿色：已添加到仓库但是未提交的状态，commoit变为白色
+ * 蓝色：代码发生过修改的状态，commit变为白色
+ * 白色：成功的状态
  */
 public class MainActivity extends AppCompatActivity {
 
