@@ -2,8 +2,9 @@ package net.bwie.git;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 /**
  * Git：代码版本管理工具，是全球最好的代码工具（软件）
@@ -47,7 +48,6 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     protected ImageView mImageView;
-    protected TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,8 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         mImageView = (ImageView) findViewById(R.id.image_view);
-        mTextView = (TextView) findViewById(R.id.text_view);
     }
-
 
 }
