@@ -35,6 +35,7 @@ import android.widget.ImageView;
  * 绿色：已添加到仓库但是未提交的状态，commoit变为白色
  * 蓝色：代码发生过修改的状态，commit变为白色
  * 白色：成功的状态
+ * 灰色：删除文件的状态
  * <p>
  * 举例：有一个TextView
  * 需求1、创建分支，再添加一个Imageiew，提交代码，合并到主干，删除分支
@@ -42,6 +43,13 @@ import android.widget.ImageView;
  *
  * 下午需求：1、别人在主干修改btn为textview
  * 2、我们删除btn
+ *
+ * 查看版本历史记录
+ * VCS -> Browse VCS Repository -> Show Git repository log -> 选择要查看的工程
+ * 回滚到之前版本
+ * VCS -> Git -> Reset HEAD...
+ * Reset Type：一定要选择hard，强制回滚，这样可以将文件内的代码也恢复
+ * To Commit：回滚到哪个版本，例如：HEAD~1代表回滚到前一个版本
  */
 public class MainActivity extends AppCompatActivity {
 
