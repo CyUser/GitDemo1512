@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Git：代码版本管理工具，是全球最好的代码工具（软件）
@@ -42,13 +43,13 @@ import android.widget.ImageView;
  * 需求1、创建分支，再添加一个Imageiew，提交代码，合并到主干，删除分支
  * 需求2、创建分支，将TextView修改为Button按钮，提交代码，合并到主干，删除分支
  *
- * 下午需求：1、修改btn为textview
- * 2、删除btn
+ * 下午需求：1、别人在主干修改btn为textview
+ * 2、我们删除btn
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     protected ImageView mImageView;
-    protected Button mBtn;
+    protected TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,14 +60,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         mImageView = (ImageView) findViewById(R.id.image_view);
-        mBtn = (Button) findViewById(R.id.btn);
-        mBtn.setOnClickListener(MainActivity.this);
+        mTextView = (TextView) findViewById(R.id.text_view);
     }
 
-    @Override
-    public void onClick(View view) {
-        if (view.getId() == R.id.btn) {
 
-        }
-    }
 }
