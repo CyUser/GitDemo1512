@@ -18,10 +18,6 @@ import android.os.Bundle;
  * master：主干：整个工程的主题
  * branch：分支：强烈推荐在分支中操作代码，操作完毕后合并到主干中，防止代码之间干扰
  *
- * 举例：有一个TextView
- * 需求1、再添加一个Imageiew
- * 需求2、将TextView修改为Button按钮
- *
  * 使用流程：
  * 1、启用代码控制
  * VCS -> Enabl Version Control Integration -> Git
@@ -38,6 +34,10 @@ import android.os.Bundle;
  * 绿色：已添加到仓库但是未提交的状态，commoit变为白色
  * 蓝色：代码发生过修改的状态，commit变为白色
  * 白色：成功的状态
+ *
+ * 举例：有一个TextView
+ * 需求1、再添加一个Imageiew
+ * 需求2、将TextView修改为Button按钮
  */
 public class MainActivity extends AppCompatActivity {
 
