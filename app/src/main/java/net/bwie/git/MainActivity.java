@@ -2,8 +2,6 @@ package net.bwie.git;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 
 /**
@@ -45,10 +43,9 @@ import android.widget.ImageView;
  * 下午需求：1、修改btn为textview
  * 2、删除btn
  */
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     protected ImageView mImageView;
-    protected Button mBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,14 +56,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initView() {
         mImageView = (ImageView) findViewById(R.id.image_view);
-        mBtn = (Button) findViewById(R.id.btn);
-        mBtn.setOnClickListener(MainActivity.this);
     }
 
-    @Override
-    public void onClick(View view) {
-        if (view.getId() == R.id.btn) {
-
-        }
-    }
 }
