@@ -2,6 +2,7 @@ package net.bwie.git;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
@@ -43,6 +44,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     protected TextView mTextView;
+    protected ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,5 +55,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void initView() {
         mTextView = (TextView) findViewById(R.id.text_view);
+        mImageView = (ImageView) findViewById(R.id.image_view);
     }
 }
