@@ -2,8 +2,9 @@ package net.bwie.git;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 /**
  * Git：代码版本管理工具，是全球最好的代码工具（软件）
@@ -41,10 +42,10 @@ import android.widget.TextView;
  * 需求1、再添加一个Imageiew
  * 需求2、将TextView修改为Button按钮
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    protected TextView mTextView;
     protected ImageView mImageView;
+    protected Button mBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +55,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mTextView = (TextView) findViewById(R.id.text_view);
         mImageView = (ImageView) findViewById(R.id.image_view);
+        mBtn = (Button) findViewById(R.id.btn);
+        mBtn.setOnClickListener(MainActivity.this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.btn) {
+
+        }
     }
 }
