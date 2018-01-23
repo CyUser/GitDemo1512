@@ -39,8 +39,8 @@ import android.widget.ImageView;
  * 白色：成功的状态
  * <p>
  * 举例：有一个TextView
- * 需求1、再添加一个Imageiew
- * 需求2、将TextView修改为Button按钮
+ * 需求1、创建分支，再添加一个Imageiew，提交代码，合并到主干，删除分支
+ * 需求2、创建分支，将TextView修改为Button按钮，提交代码，合并到主干，删除分支
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
