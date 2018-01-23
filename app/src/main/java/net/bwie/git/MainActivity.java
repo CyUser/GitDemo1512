@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 /**
  * Git：代码版本管理工具，是全球最好的代码工具（软件）
- * 可以实现多人合作开发，代码合并，解决冲突，代码版本回滚
+ * 可以实现多人合作开发，代码合并merge，解决冲突conflict，代码版本回滚reset
  * <p>
  * Github：开源代码托管网站
  * 我们今天开始所有代码全部发布到github上，你们去github下载即可
